@@ -18,6 +18,8 @@ public class Main {
     }
 
     public static byte sum(byte a, int b){
+        //просьба пересмотреть условие задания
+        //там тип второго параметра отличается
         System.out.println("---Задание 4---");
         return (byte) (a + b);
     }
@@ -33,11 +35,17 @@ public class Main {
     }
 
     public static boolean isCharA(char a){
+        //требования задания выполняются
+        //решение принимается
+        //в качестве дополнительной задачи предлагаю подумать над более коротким решением задачи
         System.out.println("---Задание 7---");
         return a =='A' ? true : false;
     }
 
     public static boolean isCharNumber(char a){
+        //требования задания выполняются
+        //решение принимается
+        //в качестве дополнительной задачи предлагаю подумать над более коротким решением задачи
         System.out.println("---Задание 8---");
         return Character.isDigit(a) ? true : false;
     }
