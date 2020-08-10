@@ -5,19 +5,19 @@ public class Main {
     //todo: скоро тут будет крутой проект
     public static void main(String[] args) {
 
-        System.out.println(sum((byte) 3,5));
-        System.out.println(multiplication(10, (int) 100));
+        System.out.println(sum((byte) 3,(short )5));
+        System.out.println(multiplication(10, 100));
         System.out.println(getMaxNumber(15, 25));
-        System.out.println(isCharA('a'));
+        System.out.println(isCharA('r'));
         System.out.println(isCharNumber('5'));
         binaryString(30);
         numberTen();
         System.out.println(numberChar('g'));
-        System.out.println(numberTwelve(175));
+        System.out.println(numberTwelve(75));
 
     }
 
-    public static byte sum(byte a, int b){
+    public static byte sum(byte a, short  b){
         System.out.println("---Задание 4---");
         return (byte) (a + b);
     }
@@ -29,17 +29,17 @@ public class Main {
 
     public static int getMaxNumber(int a, int b){
         System.out.println("---Задание 6---");
-        return a > b ? a : b;
+        return Math.max(a, b);
     }
 
     public static boolean isCharA(char a){
         System.out.println("---Задание 7---");
-        return a =='A' ? true : false;
+        return a == 'A';
     }
 
     public static boolean isCharNumber(char a){
         System.out.println("---Задание 8---");
-        return Character.isDigit(a) ? true : false;
+        return Character.isDigit(a);
     }
 
     public static void binaryString(int a){
@@ -58,7 +58,7 @@ public class Main {
 
     public static int numberChar(char a){
         System.out.println("---Задание 11---");
-        return (int)a;
+        return a;
     }
 
     public static char numberTwelve(int a){
